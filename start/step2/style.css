@@ -1,0 +1,130 @@
+.backButton {
+    padding: 5px 8px;
+    background-color: #B8DE9C;
+    color: white;
+    font-size: 40px;
+}
+
+.mainContent {
+    width: 60%;
+    margin: auto;
+}
+
+.mainContent .judul {
+    text-align: center;
+    color: #19863E;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mainContent .progress {
+    display: grid;
+    grid-template-columns: 50px auto 50px auto 50px auto 50px;
+}
+
+.mainContent .progress .label {
+    text-align: center;
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    font-size: 20px;
+    color: #C6C6C6;
+}
+
+.mainContent .progress .circle {
+    background-color: white;
+    text-align: center;
+    color: #C6C6C6;
+    font-size: 20px;
+    padding: 15px 0;
+    border-radius: 50%;
+    border: 3px solid #C6C6C6;
+}
+
+.mainContent .progress .line {
+    width: 105%;
+    margin-top: 22px;
+    margin-left: -2.5%;
+    background-color: #C6C6C6;
+    height: 10px;
+    z-index: -1;
+}
+
+/* 
+====================
+||     footer     ||
+====================
+        || ||
+        || ||
+     ===== =====
+     \\       //
+      \\     //
+       \\   //
+        \\ //
+         ===
+*/
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.space {
+    margin-top: 50px;
+}
+/* 
+====================
+||    tambahan    ||
+====================
+        || ||
+        || ||
+     ===== =====
+     \\       //
+      \\     //
+       \\   //
+        \\ //
+         ===
+*/
+
+.form {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+}
+
+.form label {
+    padding: 5px 0;
+}
+
+.form .upload {
+    background: #EFEDEE;
+    padding-left: 8px;
+    color: #0000004F;
+}
+
+.submit {
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #B8DE9C;
+    color: #03821F;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px #5BAE67;
+}

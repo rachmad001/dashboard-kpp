@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="start()" onresize="resize()">
+	<div class="login-page">
+		<div class="login-form-control">
+			<div class="login-form">
+				<div class="content-form">
+					<div class="text">Silahkan,</div>
+					<div class="text1">Login dengan akun anda</div>
+					<input type="text" name="username" placeholder="Nama Pengguna">
+					<input type="password" name="password" placeholder="Kata Sandi">
+					<button class="signin">Masuk</button>
+					<div class="register">Belum punya akun? <b>Daftar<b></div>
+					<br>
+				</div>
+			</div>
+			<div class="hiasan top-right">
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+			</div>
+			<div class="hiasan bottom-left">
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+			</div>
+			<img src="logo.jpeg" class="images">
+		</div>
+		<div class="opening">
+			<div class="greetings">
+				<h2>Welcome</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="hiasan top-left">
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+			</div>
+			<div class="hiasan bottom-right">
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+				<div class="rectangle"></div>
+			</div>
+			<img src="image 3.jpg" class="mobil">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var elmnt = document.querySelector(".login-page");
+		var form = document.querySelector(".login-form");
+		var greetings = document.querySelector(".greetings");
+		var userScreen = elmnt.offsetHeight;
+		var formSc = (userScreen - form.offsetHeight) / 2;
+		var greetSc = (userScreen - greetings.offsetHeight) / 2;
+		function start(){
+			form.style.top = formSc + "px";
+			greetings.style.top = greetSc + "px";
+		}
+		function resize(){
+			userScreen = elmnt.offsetHeight;
+			formSc = (userScreen - form.offsetHeight) / 2;
+			greetSc = (userScreen - greetings.offsetHeight) / 2;
+			form.style.top = formSc + "px";
+			greetings.style.top = greetSc + "px";
+		}
+	</script>
+</body>
+</html>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

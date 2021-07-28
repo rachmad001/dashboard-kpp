@@ -1,0 +1,34 @@
+create table progress(
+	id int not null IDENTITY,
+	id_pegawai varchar(50) not null,
+	ftw bit,
+	pcr bit,
+	berkas bit,
+	temporary bit,
+	ddt bit,
+	groundtest bit,
+	berkas_orientasi bit,
+	orientasi bit,
+	PRIMARY KEY(id),
+	FOREIGN KEY(id_pegawai) REFERENCES pegawai(id)
+)
+
+CREATE TABLE ftw(
+	id int not null identity primary key,
+	id_progress int not null,
+	scans varchar(50),
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+create trigger ftwtrigger on ftw
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set ftw = @status where id = @id_progress
+end
+
