@@ -107,6 +107,39 @@ body {
          ===
 */
 
+.form {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+}
+
+.form label {
+    padding: 5px 0;
+}
+
+.form .upload {
+    background: #EFEDEE;
+    padding-left: 8px;
+    color: #0000004F;
+}
+
+.submit {
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #B8DE9C;
+    color: #03821F;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px #5BAE67;
+}
+
 .process {
     width: 60%;
     margin: auto;

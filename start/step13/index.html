@@ -16,64 +16,49 @@
         <div class="progress">
             <div></div>
             <div class="circle">
-                <label>1</label>
+                <label>9</label>
             </div>
             <div class="line"></div>
             <div class="circle">
-                <label>2</label>
+                <label>10</label>
             </div>
             <div class="line"></div>
             <div class="circle">
-                <label>3</label>
+                <label>11</label>
             </div>
             <div class="line"></div>
             <div class="circle">
-                <label>4</label>
+                <label>12</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>13</label>
             </div>
             <div></div>
         </div>
         <div class="progress">
             <div></div>
-            <div class="label">Validasi mcu</div>
+            <div class="label">Input Berkas Orientasi</div>
             <div></div>
-            <div class="label">Input Berkas</div>
+            <div class="label">Validasi Berkas</div>
             <div></div>
-            <div class="label">Seleksi Berkas</div>
+            <div class="label">Proses Orientasi</div>
             <div></div>
-            <div class="label">Temporary Mine Permit</div>
+            <div class="label">Seleksi Administrasi</div>
+            <div></div>
+            <div class="label">Penerbitan SIMPER</div>
             <div></div>
         </div>
     </div>
-    <div class="form">
-        <label for="">Nik</label>
-        <input type="text" placeholder="317407XXXX">
-        <label for="">No.SIM</label>
-        <input type="text" placeholder="0109XXXXX">
-        <label for="">No. Ijazah</label>
-        <input type="text" placeholder="DN-XX-XX">
-        <label for="">Scan Pengajuan Induksi</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan Hasil PCR</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan KTP</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan SIM</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan Ijazah</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan MCU</label>
-        <label for="" class="upload">Pilih Gambar</label>
-        <label for="">Scan Surat Pernyataan</label>
-        <label for="" class="upload">Pilih Gambar</label>
-    </div>
-    <div class="submit">
-        Kirim
+    <div class="process">
+        <div class="status">Mohon menunggu untuk proses penerbitan SIMPER</div>
+        <div class="instruction">Penerbitan SIMPER dilakukan oleh SHE Dept</div>
     </div>
     <div class="footer">
         <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
     </div>
     <script>
-        var footer = document.getElementsByClassName("footer")[0];
+       var footer = document.getElementsByClassName("footer")[0];
         var progress = document.getElementsByClassName("progress");
         var circle =  progress[0].getElementsByClassName("circle");
         var line = progress[0].getElementsByClassName("line");
@@ -83,9 +68,28 @@
         circle[0].style.backgroundColor = "#5BAE67";
         line[0].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
         label[0].style.color = "#5BAE67";
+
         circle[1].style.border = "3px solid #5BAE67";
-        circle[1].style.color = "#5BAE67";
+        circle[1].style.color = "white";
+        circle[1].style.backgroundColor = "#5BAE67";
+        line[1].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
         label[1].style.color = "#5BAE67";
+
+        circle[2].style.border = "3px solid #5BAE67";
+        circle[2].style.color = "white";
+        circle[2].style.backgroundColor = "#5BAE67";
+        line[2].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
+        label[2].style.color = "#5BAE67";
+
+         circle[3].style.border = "3px solid #5BAE67";
+        circle[3].style.color = "white";
+        circle[3].style.backgroundColor = "#5BAE67";
+        line[3].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
+        label[3].style.color = "#5BAE67";
+
+        circle[4].style.border = "3px solid #5BAE67";
+        circle[4].style.color = "#5BAE67";
+        label[4].style.color = "#5BAE67";
         posFooter();
         function posFooter() {
             if (document.body.scrollHeight < window.innerHeight){

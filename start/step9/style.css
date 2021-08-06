@@ -29,7 +29,7 @@ body {
 .mainContent .progress {
     display: grid;
     /* border: 1px solid red; */
-    grid-template-columns: auto 60px 100px 60px 100px 60px 100px 60px auto;
+    grid-template-columns: auto 60px 100px 60px 100px 60px 100px 60px 100px 60px auto;
 }
 
 .mainContent .progress .label {

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.otf);
+}
+
+body {
+    font-family: poppins;
+}
+
 .backButton {
     padding: 5px 8px;
     background-color: #B8DE9C;
@@ -19,23 +28,25 @@
 
 .mainContent .progress {
     display: grid;
-    grid-template-columns: 50px auto 50px auto 50px auto 50px;
+    /* border: 1px solid red; */
+    grid-template-columns: auto 60px 100px 60px 100px 60px 100px 60px auto;
 }
 
 .mainContent .progress .label {
     text-align: center;
-    width: calc(100% + 80px);
-    margin-left: -40px;
-    font-size: 20px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    font-size: 15px;
     color: #C6C6C6;
+    /*border: 1px solid blue;*/
 }
 
 .mainContent .progress .circle {
     background-color: white;
     text-align: center;
     color: #C6C6C6;
-    font-size: 20px;
-    padding: 15px 0;
+    font-size: 15px;
+    padding: 15px 20px;
     border-radius: 50%;
     border: 3px solid #C6C6C6;
 }
@@ -107,6 +118,7 @@
 
 .form label {
     padding: 5px 0;
+    font-weight: 600;
 }
 
 .form .upload {
