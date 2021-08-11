@@ -1,0 +1,157 @@
+body {
+		width: 297mm;
+		height: 210mm;
+		margin: 0;
+		border: 1px solid black;
+	}
+#printarea {
+	width: 95%;
+	height: 95%;
+	margin: auto;
+	margin-top: 2%;
+	border: 1px solid black;
+}
+
+#printarea .header {
+	display: grid;
+	grid-template-columns: 40% 30% 30%;
+}
+
+
+#printarea .header .kppLogo {
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+}
+
+#printarea .header img {
+	width: 100%;
+	height: 100px;
+}
+
+
+#printarea .header .judul {
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+}
+
+#printarea .header .judul label {
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid blue;
+}
+
+#printarea .header .lndLogo {
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+}
+
+#printarea .content {
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	border: 1px solid blue;
+}
+
+#printarea .content .author {
+	height: 50px;
+	display: grid;
+	grid-template-columns: 53% 47%;
+}
+
+.content .author .infoAuthor {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	font-size: 13px;
+	font-weight: 600;
+	border: 1px solid red;
+}
+
+.content .penilaian {
+	margin-top: 10px;
+	width: 100%;
+	border: 1px solid yellow;
+}
+
+.content .penilaian table, .penilaian td {
+	border: 1px solid black;
+}
+
+.content .penilaian table {
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 600;
+	border-collapse: collapse;
+}
+
+.head {
+	background-color: skyblue;
+}
+
+.content .additional {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 44% auto 44%;
+}
+
+.content .additional .materi {
+	height: 100px;
+	border: 1px solid green;
+}
+
+.additional table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.additional table, .additional td {
+	border: 1px solid black;
+}
+
+.materi .noted {
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+}
+
+.materi .no {
+	width: 10%;
+	text-align: center;
+}
+
+.content .additional .kesimpulan {
+	height: 100px;
+	border: 1px solid green;
+}
+
+.content .aprove {
+	width: 40%;
+	height: 90px;
+	margin-left: 60%;
+	display: grid;
+	grid-template-columns: 40% auto 40%;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.aprove .signature {
+	border: 1px solid red;
+	position: relative;
+}
+
+.signature .name {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}

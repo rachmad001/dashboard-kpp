@@ -1,0 +1,96 @@
+body {
+    width: 297mm;
+    height: 210mm;
+    margin: 0;
+    border: 1px solid black;
+  }
+#printarea {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  margin-top: 2%;
+  border: 1px solid lightblue;
+}
+
+#printarea .header {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+
+
+#printarea .header .kppLogo {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#printarea .header img {
+  width: 100%;
+  height: 100px;
+}
+
+
+#printarea .header .judul {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#printarea .header .judul label {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+#printarea .header .lndLogo {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#printarea .content {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid blue;
+}
+
+#printarea .content .author {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 53% 47%;
+}
+
+.content .author .infoAuthor {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.content .penilaian {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid yellow;
+}
+
+.content .penilaian table, td {
+  border: 1px solid black;
+}
+.content .penilaian table {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-collapse: collapse;
+}
+
+@page {
+  margin: 0mm;
+}
