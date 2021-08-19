@@ -1,0 +1,126 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.otf);
+}
+
+body {
+    font-family: poppins;
+}
+
+.backButton {
+    padding: 5px 8px;
+    background-color: #B8DE9C;
+    color: white;
+    font-size: 40px;
+}
+
+.mainContent {
+    width: 60%;
+    margin: auto;
+}
+
+.mainContent .judul {
+    text-align: center;
+    color: #19863E;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mainContent .progress {
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: auto 60px 100px 60px 100px 60px 100px 60px 100px 60px auto;
+}
+
+.mainContent .progress .label {
+    text-align: center;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    font-size: 15px;
+    color: #C6C6C6;
+    /*border: 1px solid blue;*/
+}
+
+.mainContent .progress .circle {
+    background-color: white;
+    text-align: center;
+    color: #C6C6C6;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: 3px solid #C6C6C6;
+}
+
+.mainContent .progress .line {
+    width: 105%;
+    margin-top: 22px;
+    margin-left: -2.5%;
+    background-color: #C6C6C6;
+    height: 10px;
+    z-index: -1;
+}
+
+/* 
+====================
+||     footer     ||
+====================
+        || ||
+        || ||
+     ===== =====
+     \\       //
+      \\     //
+       \\   //
+        \\ //
+         ===
+*/
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.space {
+    margin-top: 50px;
+}
+/* 
+====================
+||    tambahan    ||
+====================
+        || ||
+        || ||
+     ===== =====
+     \\       //
+      \\     //
+       \\   //
+        \\ //
+         ===
+*/
+
+.process {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.status {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5BAE67;
+}
+
+.instruction {
+    text-align: center;
+    margin-top: 30px;
+}

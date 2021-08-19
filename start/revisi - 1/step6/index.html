@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onresize="resize()">
+    <div>
+        <span class="backButton"><i class="fas fa-long-arrow-alt-left"></i></span>
+    </div>
+    <div class="mainContent">
+        <div class="judul">Pembuatan Simper</div>
+        <div class="progress">
+            <div></div>
+            <div class="circle">
+                <label>6</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>7</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>8</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>9</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>10</label>
+            </div>
+            <div></div>
+        </div>
+        <div class="progress">
+            <div class="label">Temporary Mine Permit</div>
+            <div></div>
+            <div class="label">DDT Internal</div>
+            <div></div>
+            <div class="label">Ground Test</div>
+            <div></div>
+            <div class="label">Input Hasil Ground Test</div>
+            <div></div>
+            <div class="label">Validasi Ground Test</div>
+            <div></div>
+        </div>
+    </div>
+   <div class="process">
+        <div class="status">Anda berada di tahap Temporary Main Permit</div>
+        <div class="instruction">Silahkan meminta Temporary Mine Permit kepada perusahaan dengan membawa KTP/SIM</div>
+    </div>
+    <div class="footer">
+        <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
+    </div>
+    <script>
+        var footer = document.getElementsByClassName("footer")[0];
+        var progress = document.getElementsByClassName("progress");
+        var circle =  progress[0].getElementsByClassName("circle");
+        var line = progress[0].getElementsByClassName("line");
+        var label = progress[1].getElementsByClassName("label");
+
+        circle[0].style.border = "3px solid #5BAE67";
+        circle[0].style.color = "#5BAE67";
+        label[0].style.color = "#5BAE67";
+        
+        posFooter();
+        function posFooter() {
+            if (document.body.scrollHeight < window.innerHeight){
+                footer.classList.remove("space");
+                footer.classList.add("fixed");
+            }
+            else {
+                footer.classList.remove("fixed");
+                footer.classList.add("space");
+            }
+        }
+        function resize() {
+            posFooter();
+        }
+    </script>
+</body>
+</html>

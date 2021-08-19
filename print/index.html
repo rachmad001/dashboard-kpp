@@ -10,13 +10,13 @@
   <div id="printarea">
     <div class="header">
       <div class="kppLogo">
-        <img src="Screenshot (25).png" alt="logo kpp">
+        <img src="Screenshot (25).png" alt="logo kpp" class="logo">
       </div>
       <div class="judul">
         <label>LAPORAN AKHIR PELATIHAN (LAP)</label>
       </div>
       <div class="lndLogo">
-        <img src="Screenshot (25).png" alt="lnd kpp">
+        <img src="Screenshot (25).png" alt="lnd kpp" class="logo">
       </div>
     </div>
     <div class="content">
@@ -282,5 +282,13 @@
       </div>
     </div>
   </div>
+  <script>
+    kppLogo = document.getElementsByClassName("logo")[0];
+    lndLogo = document.getElementsByClassName("logo")[1];
+    console.log("kpp width : "+kppLogo.offsetWidth+"px");
+    console.log("kpp height : "+kppLogo.offsetHeight+"px");
+    console.log("lnd width : "+lndLogo.offsetWidth+"px");
+    console.log("lnd height : "+lndLogo.offsetHeight+"px");
+  </script>
 </body>
 </html>

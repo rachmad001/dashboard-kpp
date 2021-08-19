@@ -32,3 +32,75 @@ begin
 	update progress set ftw = @status where id = @id_progress
 end
 
+create table pcr (
+	id int identity primary key,
+	id_progress int,
+	tanggal_pengambilan date,
+	hasil varchar(10),
+	scan_hasil_pcr varchar(100),
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE berkas(
+	id INT IDENTITY PRIMARY KEY,
+	id_progress int,
+	nik VARCHAR(30),
+	no_sim VARCHAR(30),
+	no_ijazah VARCHAR(30),
+	scan_pengajuan_induksi VARCHAR(100),
+	scan_hasil_pcr VARCHAR(100),
+	scan_ktp VARCHAR(100),
+	scan_sim VARCHAR(100),
+	scan_ijazah VARCHAR(100),
+	scan_mcu VARCHAR(100),
+	scan_surat_pernyataan VARCHAR(100),
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE induksi(
+	id int identity,
+	id_progress int,
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE temporary(
+	id int identity,
+	id_progress int,
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE ddt(
+	id int identity,
+	id_progress int,
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE groundtest(
+	id int identity,
+	id_progress int,
+	scan_hasil_groundtest VARCHAR(100),
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE berkas_orientasi(
+	id int identity,
+	id_progress int,
+	scan_hasil_groundtest VARCHAR(100),
+	scan_hauling VARCHAR(100),
+	scan_simper VARCHAR(100),
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
+
+CREATE TABLE orientasi(
+	id int identity,
+	id_progress int,
+	status bit,
+	FOREIGN KEY(id_progress) REFERENCES progress(id)
+)
