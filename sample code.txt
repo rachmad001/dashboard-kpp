@@ -1,0 +1,9 @@
+ [HttpPost]
+        public ActionResult testing()
+        {
+            string nama = Request["nama"];
+            HttpPostedFileBase postedFile = Request.Files["images"];
+            string path = Server.MapPath("~/Uploads/");
+            postedFile.SaveAs(path + Path.GetFileName(postedFile.FileName));
+            return Content(nama);
+        }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <script src="app.js"></script> -->
+</head>
+<body onresize="resize()" onload="start()">
+	<div class="content">
+		<div class="judul">
+			Induksi Karyawan Pulang Cuti Mekanik
+		</div>
+		<div class="control">
+			<div class="soal">
+				<div class="pertanyaan">
+					(1) Ambil APAR dari lokasi <br>
+					(2) Tes dengan menekan tuas hingga bahan pemadam keluar <br>
+					(3) Arahkan corong/nozzle mendekati api searah dengan angin dan posisi tubuh membungkuk setengah <br>
+					(4) Tarik/cabut pin pengamannya <br>
+					(5) Bawa APAR mendekati api <br>
+					(6) Tekan tuas APAR hingga bahan pemadam api keluar <br>
+					<br>
+					1. Urutan yang tepat dalam menggunakan APAR (Alat Pemadam Api Ringan) berdasarkan poin diatas adalah? <br>
+					<input type="radio" name="no1" value="a" onclick="choice(0, 'a')">a. 3-1-5-6-2-4 <br>
+					<input type="radio" name="no1" value="b" onclick="choice(0, 'b')">b. 1-4-2-5-3-6 <br>
+					<input type="radio" name="no1" value="c" onclick="choice(0, 'c')">c. 1-5-4-2-3-6 <br>
+					<input type="radio" name="no1" value="d" onclick="choice(0, 'd')">d. 6-1-3-5-2-4 <br>
+				</div>
+				<div class="pertanyaan">
+					2. Sebutkan urusan hirarki pengendalian resiko yang benar? <br>
+					<input type="radio" name="no2" value="a" onclick="choice(1, 'a')">
+					a. Eliminasi - isolasi - subtitusi - engineering administratif - training - APD <br>
+					<input type="radio" name="no2" value="b" onclick="choice(1, 'b')">
+					b. Isolasi - eliminasi - engineering - subtitusi - training - administratif - APD <br>
+					<input type="radio" name="no2" value="c" onclick="choice(1, 'c')">
+					c. Eliminasi - suubtitusi - isolasi - engineering - administratif - training - APD <br>
+					<input type="radio" name="no2" value="d" onclick="choice(1, 'd')">
+					d. Isolasi - eliminasi - engineering - subtitusi - training - administratif - APD <br>
+				</div>
+				<div class="pertanyaan">
+					3.Yang tidak termasuk sebagai penyebab fatigue/kelelahan adalah: <br>
+					<input type="radio" name="no3" value="a" onclick="choice(2, 'a')">
+					a. Setelah melakukan perjalanan jauh <br>
+					<input type="radio" name="no3" value="b" onclick="choice(2, 'b')">
+					b. Dibawah pengaruh obat <br>
+					<input type="radio" name="no3" value="c" onclick="choice(2, 'c')">
+					c. Tidur selama 6-8 jam <br>
+					<input type="radio" name="no3" value="d" onclick="choice(2, 'd')">
+					d. Sedang merasa emosi atau depresi <br>
+				</div>
+			</div>
+			<div></div>
+			<div class="nomor">
+				<div class="time">
+					<div class="date">Selasa, 27 Aug 2021</div>
+					<div class="timer"></div>
+				</div> 
+				<div class="number">
+					<div class="no" onclick="todst(0)">1</div>
+					<div></div>
+					<div class="no" onclick="todst(1)">2</div>
+					<div></div>
+					<div class="no" onclick="todst(2)">3</div>
+					<div></div>
+					<div class="no">4</div>
+					<div></div>
+					<div class="no">5</div>
+					<div class="no">6</div>
+					<div></div>
+					<div class="no">7</div>
+					<div></div>
+					<div class="no">8</div>
+					<div></div>
+					<div class="no">9</div>
+					<div></div>
+					<div class="no">10</div>
+					<div class="no">11</div>
+					<div></div>
+					<div class="no">12</div>
+					<div></div>
+					<div class="no">13</div>
+					<div></div>
+					<div class="no">14</div>
+					<div></div>
+					<div class="no">15</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="submit">
+        Kirim
+    </div>
+    <div class="footer">
+        <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
+    </div>
+	<script src="app.js"></script>
+</body>
+</html>

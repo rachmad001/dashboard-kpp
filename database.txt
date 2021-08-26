@@ -42,6 +42,17 @@ create table pcr (
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
 
+create trigger pcrtrigger on pcr
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set pcr = @status where id = @id_progress
+end
+
 CREATE TABLE berkas(
 	id INT IDENTITY PRIMARY KEY,
 	id_progress int,
@@ -59,12 +70,34 @@ CREATE TABLE berkas(
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
 
+create trigger berkastrigger on berkas
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set berkas = @status where id = @id_progress
+end
+
 CREATE TABLE induksi(
 	id int identity,
 	id_progress int,
 	status bit,
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
+
+create trigger induksitrigger on induksi
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set induksi = @status where id = @id_progress
+end
 
 CREATE TABLE temporary(
 	id int identity,
@@ -73,12 +106,34 @@ CREATE TABLE temporary(
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
 
+create trigger temporarytrigger on temporary
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set temporary = @status where id = @id_progress
+end
+
 CREATE TABLE ddt(
 	id int identity,
 	id_progress int,
 	status bit,
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
+
+create trigger ddttrigger on ddt
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set ddt = @status where id = @id_progress
+end
 
 CREATE TABLE groundtest(
 	id int identity,
@@ -87,6 +142,17 @@ CREATE TABLE groundtest(
 	status bit,
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
+
+create trigger groundtesttrigger on groundtest
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set groundtest = @status where id = @id_progress
+end
 
 CREATE TABLE berkas_orientasi(
 	id int identity,
@@ -98,9 +164,31 @@ CREATE TABLE berkas_orientasi(
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
 
+create trigger berkasorientasittrigger on berkas_orientasi
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set berkas_orientasi = @status where id = @id_progress
+end
+
 CREATE TABLE orientasi(
 	id int identity,
 	id_progress int,
 	status bit,
 	FOREIGN KEY(id_progress) REFERENCES progress(id)
 )
+
+create trigger orientasittrigger on orientasi
+after update
+as
+begin
+	set nocount on;
+	declare @status varchar(50), @id_progress int;
+	select @status = ins.status FROM inserted ins;
+	select @id_progress = ins.id_progress from inserted ins;
+	update progress set orientasi = @status where id = @id_progress
+end
