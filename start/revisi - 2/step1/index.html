@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sweetalert2.all.min.js"></script>
+</head>
+<body onresize="resize()" onload="resize()">
+    <div>
+        <span class="backButton"><i class="fas fa-long-arrow-alt-left"></i></span>
+    </div>
+    <div class="mainContent">
+        <div class="judul">Formulir Hasil Treadmill</div>
+    </div>
+    <div class="form">
+        <label for="">Masukkan NPR</label>
+        <input type="text" placeholder="klXX">
+        <label for="">Scan Hasil Treadmill</label>
+        <label for="file" class="upload">Pilih Gambar</label>
+    </div>
+    <div class="submit" onclick="submit()">
+        Kirim
+    </div>
+    <div class="footer">
+        <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
+    </div>
+    <input type="file" id="file" class="files" onchange="handle()">
+    <script src="app.js"></script>
+</body>
+</html>

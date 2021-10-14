@@ -127,6 +127,10 @@ body {
     color: #0000004F;
 }
 
+.upload:hover {
+    cursor: pointer;
+}
+
 .submit {
     width: 30%;
     margin: auto;
@@ -139,6 +143,10 @@ body {
     color: #03821F;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 5px #5BAE67;
+}
+
+.submit:hover {
+    cursor: pointer;
 }
 
 .files {

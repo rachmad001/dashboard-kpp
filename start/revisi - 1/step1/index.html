@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../../fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 <body onresize="resize()">
     <div>
@@ -54,35 +55,13 @@
         <label for="">Scan Hasil Treadmill</label>
         <label for="file" class="upload">Pilih Gambar</label>
     </div>
-    <div class="submit">
+    <div class="submit" onclick="submit()">
         Kirim
     </div>
     <div class="footer">
         <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
     </div>
-    <input type="file" id="file" class="files">
-    <script>
-        var footer = document.getElementsByClassName("footer")[0];
-        var progress = document.getElementsByClassName("progress");
-        var circle =  progress[0].getElementsByClassName("circle");
-        var label = progress[1].getElementsByClassName("label");
-        circle[0].style.border = "3px solid #5BAE67";
-        circle[0].style.color = "#5BAE67";
-        label[0].style.color = "#5BAE67";
-        posFooter();
-        function posFooter() {
-            if (document.body.scrollHeight < window.innerHeight){
-                footer.classList.remove("space");
-                footer.classList.add("fixed");
-            }
-            else {
-                footer.classList.remove("fixed");
-                footer.classList.add("space");
-            }
-        }
-        function resize() {
-            posFooter();
-        }
-    </script>
+    <input type="file" id="file" class="files" onchange="handle()">
+    <script src="app.js"></script>
 </body>
 </html>

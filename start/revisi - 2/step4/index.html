@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sweetalert2.all.min.js"></script>
+</head>
+<body onresize="resize()" onload="resize()">
+    <div>
+        <span class="backButton"><i class="fas fa-long-arrow-alt-left"></i></span>
+    </div>
+    <div class="mainContent">
+        <div class="judul">Formulir Input Berkas</div>
+    </div>
+    <div class="form">
+        <label for="">Masukkan NPR</label>
+        <input type="text" placeholder="KLXXX">
+        <label for="">Nik</label>
+        <input type="text" placeholder="317407XXXX">
+        <label for="">No.SIM</label>
+        <input type="text" placeholder="0109XXXXX">
+        <label for="">No. Ijazah</label>
+        <input type="text" placeholder="DN-XX-XX">
+        <label for="">Scan Pengajuan Induksi</label>
+        <label for="induksi" class="upload">Pilih Gambar</label>
+        <label for="">Scan Hasil PCR</label>
+        <label for="pcr" class="upload">Pilih Gambar</label>
+        <label for="">Scan KTP</label>
+        <label for="ktp" class="upload">Pilih Gambar</label>
+        <label for="">Scan SIM</label>
+        <label for="sim" class="upload">Pilih Gambar</label>
+        <label for="">Scan Ijazah</label>
+        <label for="ijazah" class="upload">Pilih Gambar</label>
+        <label for="">Scan MCU</label>
+        <label for="mcu" class="upload">Pilih Gambar</label>
+        <label for="">Scan Surat Pernyataan</label>
+        <label for="sp" class="upload">Pilih Gambar</label>
+    </div>
+     <div class="submit" onclick="submit()">
+        Kirim
+    </div>
+    <div class="footer">
+        <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
+    </div>
+    <input type="file" id="induksi" class="files" onchange="handle('induksi',0)">
+    <input type="file" id="pcr" class="files" onchange="handle('pcr',1)">
+    <input type="file" id="ktp" class="files" onchange="handle('ktp',2)">
+    <input type="file" id="sim" class="files" onchange="handle('sim',3)">
+    <input type="file" id="ijazah" class="files" onchange="handle('ijazah',4)">
+    <input type="file" id="mcu" class="files" onchange="handle('mcu', 5)">
+    <input type="file" id="sp" class="files" onchange="handle('sp', 6)">
+    <script src="app.js"></script>
+</body>
+</html>

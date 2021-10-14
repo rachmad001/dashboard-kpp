@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../../fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 <body onresize="resize()">
     <div>
@@ -58,68 +59,33 @@
         <label for="">No. Ijazah</label>
         <input type="text" placeholder="DN-XX-XX">
         <label for="">Scan Pengajuan Induksi</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="induksi" class="upload">Pilih Gambar</label>
         <label for="">Scan Hasil PCR</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="pcr" class="upload">Pilih Gambar</label>
         <label for="">Scan KTP</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="ktp" class="upload">Pilih Gambar</label>
         <label for="">Scan SIM</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="sim" class="upload">Pilih Gambar</label>
         <label for="">Scan Ijazah</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="ijazah" class="upload">Pilih Gambar</label>
         <label for="">Scan MCU</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="mcu" class="upload">Pilih Gambar</label>
         <label for="">Scan Surat Pernyataan</label>
-        <label for="" class="upload">Pilih Gambar</label>
+        <label for="sp" class="upload">Pilih Gambar</label>
     </div>
-     <div class="submit">
+     <div class="submit" onclick="submit()">
         Kirim
     </div>
     <div class="footer">
         <div class="textfooter">&copy; 2020 PT Kalimantan Prima Persada | SHE Department | District Inde</div>
     </div>
-    <script>
-        var footer = document.getElementsByClassName("footer")[0];
-        var progress = document.getElementsByClassName("progress");
-        var circle =  progress[0].getElementsByClassName("circle");
-        var line = progress[0].getElementsByClassName("line");
-        var label = progress[1].getElementsByClassName("label");
-        circle[0].style.border = "3px solid #5BAE67";
-        circle[0].style.color = "white";
-        circle[0].style.backgroundColor = "#5BAE67";
-        line[0].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
-        label[0].style.color = "#5BAE67";
-
-        circle[1].style.border = "3px solid #5BAE67";
-        circle[1].style.color = "white";
-        circle[1].style.backgroundColor = "#5BAE67";
-        line[1].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
-        label[1].style.color = "#5BAE67";
-
-        circle[2].style.border = "3px solid #5BAE67";
-        circle[2].style.color = "white";
-        circle[2].style.backgroundColor = "#5BAE67";
-        line[2].style.background = "linear-gradient(180deg, #2F9E4D 0%, #56C866 53.12%, #B8DE9C 94.27%)";
-        label[2].style.color = "#5BAE67";
-
-        circle[3].style.border = "3px solid #5BAE67";
-        circle[3].style.color = "#5BAE67";
-        label[3].style.color = "#5BAE67";
-
-        posFooter();
-        function posFooter() {
-            if (document.body.scrollHeight < window.innerHeight){
-                footer.classList.remove("space");
-                footer.classList.add("fixed");
-            }
-            else {
-                footer.classList.remove("fixed");
-                footer.classList.add("space");
-            }
-        }
-        function resize() {
-            posFooter();
-        }
-    </script>
+    <input type="file" id="induksi" class="files" onchange="handle('induksi',0)">
+    <input type="file" id="pcr" class="files" onchange="handle('pcr',1)">
+    <input type="file" id="ktp" class="files" onchange="handle('ktp',2)">
+    <input type="file" id="sim" class="files" onchange="handle('sim',3)">
+    <input type="file" id="ijazah" class="files" onchange="handle('ijazah',4)">
+    <input type="file" id="mcu" class="files" onchange="handle('mcu', 5)">
+    <input type="file" id="sp" class="files" onchange="handle('sp', 6)">
+    <script src="app.js"></script>
 </body>
 </html>
